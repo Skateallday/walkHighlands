@@ -56,14 +56,14 @@ function Walks() {
                 </thead>
 
                 <tbody>
-                {data.map(walkData => (
+                {data.map((walkData, index) => (
 
-            <tr key={walkData.id}>
-              <td>{walkData.name}</td>
-              <td>{walkData.height}m</td>
-              <td>{walkData.region}</td>
-              <td>{walkData.public_transport}</td>
-              <td>{walkData.grade}</td>
+            <tr key={index}>
+              <td key={walkData.name}>{walkData.name}</td>
+              <td key={walkData.height}>{walkData.height}m</td>
+              <td key={walkData.region}>{walkData.region}</td>
+              <td key={walkData.public_transport}>{walkData.public_transport}</td>
+              <td key={walkData.grade}>{walkData.grade}</td>
             </tr>
                     ))}
 

@@ -5,7 +5,6 @@ import Table from 'react-bootstrap/Table'
 
 
 function WalksByPulicTransport() {
-    const walkingData = walkData;
 
 
     return (
@@ -26,9 +25,9 @@ function WalksByPulicTransport() {
 
                 <tbody>
 
-                {walkData.filter(publicTransport => !publicTransport.public_transport.includes('No')).map(filteredName => (
+                {walkData.filter(publicTransport=> !publicTransport.public_transport.includes('No')).map((filteredName, id) => (
 
-                <tr key={walkingData.id} >
+                <tr key={id} >
 
                       <td>{filteredName.name}</td>
                       <td>{filteredName.height}m</td>
