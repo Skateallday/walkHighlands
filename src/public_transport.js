@@ -1,6 +1,7 @@
 import React from 'react';
 import "./App.css";
 import { walkData } from "./components/murnos";
+import Table from 'react-bootstrap/Table'
 
 
 function WalksByPulicTransport() {
@@ -11,17 +12,39 @@ function WalksByPulicTransport() {
       <div className="App">
           <h3>Public Transport</h3>
   
-        {walkData.filter(publicTransport => !publicTransport.public_transport.includes('No')).map(filteredName => (
-          <div key={walkingData.id} style={{ margin: '30px' }} >
-              
-            <div>{`Walk: ${filteredName.name}`}</div>
-            <div>{`Height: ${filteredName.height}m`}</div>
-            <div>{`Region: ${filteredName.region}`}</div>
-            <div>{`Public Transport: ${filteredName.public_transport}`}</div>
-            <div>{`Grade: ${filteredName.grade}`}</div>
-          </div>
-        ))}
-      </div>
+                    
+            <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Height</th>
+                    <th>Region</th>
+                    <th>Public Transport</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+
+                {walkData.filter(publicTransport => !publicTransport.public_transport.includes('No')).map(filteredName => (
+
+                <tr key={walkingData.id} >
+
+                      <td>{filteredName.name}</td>
+                      <td>{filteredName.height}m</td>
+                      <td>{filteredName.region}</td>
+                      <td>{filteredName.public_transport}</td>
+                      <td>{filteredName.grade}</td>
+
+                </tr>   
+
+                ))}
+             
+                </tbody>
+              </Table> 
+        </div>
+
+
     );
   }
 

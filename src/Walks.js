@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./App.css";
 import { walkData } from "./components/murnos";
+import Table from 'react-bootstrap/Table'
+import Form from 'react-bootstrap/Form'
 
 
 
@@ -31,24 +33,42 @@ function Walks() {
   
     return (
       <div className="App">
-        <select onChange={(e) => setSortType(e.target.value)}> 
-        <option value="name">Name</option>
-          <option value="height">Height</option>
-          <option value="grade">Grade</option>
-          <option value="region">Region</option>
-          <option value="public_transport">Public Transport</option>
-        </select>
 
+
+        <Form.Group onChange={(e) => setSortType(e.target.value)} controlId="exampleForm.ControlSelect1">
+          <Form.Label>Height or Grade</Form.Label>
+            <Form.Control as="select">
+                  <option value="height">Height</option>
+                  <option value="grade">Grade</option>
+            </Form.Control>
+        </Form.Group>
+ 
   
-        {data.map(walkData => (
-          <div key={walkData.id} style={{ margin: '30px' }}>
-            <div>{`Walk: ${walkData.name}`}</div>
-            <div>{`Height: ${walkData.height}m`}</div>
-            <div>{`Region: ${walkData.region}`}</div>
-            <div>{`Public Transport: ${walkData.public_transport}`}</div>
-            <div>{`Grade: ${walkData.grade}`}</div>
-          </div>
-        ))}
+          <Table striped bordered hover >
+            <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Height</th>
+                    <th>Region</th>
+                    <th>Public Transport</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                {data.map(walkData => (
+
+            <tr key={walkData.id}>
+              <td>{walkData.name}</td>
+              <td>{walkData.height}m</td>
+              <td>{walkData.region}</td>
+              <td>{walkData.public_transport}</td>
+              <td>{walkData.grade}</td>
+            </tr>
+                    ))}
+
+            </tbody>
+          </Table>
       </div>
     );
   }
