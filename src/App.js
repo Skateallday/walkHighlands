@@ -26,19 +26,19 @@ function App() {
           <ButtonToolbar className="custom-btn-toolbar">
 
               <LinkContainer to="/">
-                <Button>Home</Button>
+                <Button className="NavButton">Home</Button>
                 </LinkContainer>
             
               <LinkContainer to="/walks">
-                <Button>Walks by Numbers</Button>
+                <Button className="NavButton">Walks by Numbers</Button>
                 </LinkContainer>
             
               <LinkContainer to="/public-transport">
-                <Button>Walks by Public Transport</Button>
+                <Button className="NavButton">Walks by Public Transport</Button>
                 </LinkContainer>
 
                 <LinkContainer to="/random">
-                <Button>Random Walk</Button>
+                <Button className="NavButton">Random Walk</Button>
                 </LinkContainer>
 
           </ButtonToolbar>

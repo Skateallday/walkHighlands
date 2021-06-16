@@ -30,7 +30,7 @@ render(){
             </Col>
             
             <Col>      
-                <Button className="float-right"  bsSize="small" onClick={this.newNumber.bind(this)}> Generate New Walk</Button>
+                <Button className="float-right"  onClick={this.newNumber.bind(this)}> Generate New Walk</Button>
             </Col>
         </Row>
         </Container>
