@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import  Walks from './Walks';
 import WalksByPulicTransport from './public_transport';
+import RandomWalkGenerator from './random';
 import {
   MemoryRouter,
   Switch,
@@ -36,6 +37,10 @@ function App() {
                 <Button>Walks by Public Transport</Button>
                 </LinkContainer>
 
+                <LinkContainer to="/random">
+                <Button>Random Walk</Button>
+                </LinkContainer>
+
           </ButtonToolbar>
         </Jumbotron>
 
@@ -47,6 +52,9 @@ function App() {
           </Route>
           <Route path='/public-transport'>
             <WalksByPulicTransport />
+          </Route>
+          <Route path='/random'>
+            <RandomWalkGenerator />
           </Route>
           
         </Switch>

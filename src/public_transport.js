@@ -10,7 +10,8 @@ function WalksByPulicTransport() {
     return (
       <div className="App">
           <h3>Public Transport</h3>
-  
+          <hr />
+
                     
             <Table striped bordered hover>
                 <thead>
