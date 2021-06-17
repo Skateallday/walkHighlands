@@ -32,7 +32,7 @@ function Walks() {
     
   
     return (
-      <div className="App">
+      <div className="Table">
 
 
         <Form.Group onChange={(e) => setSortType(e.target.value)} controlId="exampleForm.ControlSelect1">

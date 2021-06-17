@@ -8,7 +8,7 @@ function WalksByPulicTransport() {
 
 
     return (
-      <div className="App">
+      <div className="Table">
           <h3>Public Transport</h3>
           <hr />
 
