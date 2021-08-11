@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/walkHighlands/static/css/main.87f6f2c5.chunk.css",
+    "main.js": "/walkHighlands/static/js/main.2baf8eed.chunk.js",
+    "main.js.map": "/walkHighlands/static/js/main.2baf8eed.chunk.js.map",
+    "runtime-main.js": "/walkHighlands/static/js/runtime-main.a00fcd7e.js",
+    "runtime-main.js.map": "/walkHighlands/static/js/runtime-main.a00fcd7e.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/walkHighlands/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.81eea094.chunk.js": "/walkHighlands/static/js/2.81eea094.chunk.js",
+    "static/js/2.81eea094.chunk.js.map": "/walkHighlands/static/js/2.81eea094.chunk.js.map",
+    "static/js/3.41099b17.chunk.js": "/walkHighlands/static/js/3.41099b17.chunk.js",
+    "static/js/3.41099b17.chunk.js.map": "/walkHighlands/static/js/3.41099b17.chunk.js.map",
+    "index.html": "/walkHighlands/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/walkHighlands/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.87f6f2c5.chunk.css.map": "/walkHighlands/static/css/main.87f6f2c5.chunk.css.map",
+    "static/js/2.81eea094.chunk.js.LICENSE.txt": "/walkHighlands/static/js/2.81eea094.chunk.js.LICENSE.txt",
+    "static/media/logo.ba2f8436.svg": "/walkHighlands/static/media/logo.ba2f8436.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a00fcd7e.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.81eea094.chunk.js",
+    "static/css/main.87f6f2c5.chunk.css",
+    "static/js/main.2baf8eed.chunk.js"
+  ]
+}
