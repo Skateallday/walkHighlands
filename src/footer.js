@@ -9,7 +9,7 @@ function Footer() {
   return (
 
     
-      <Container  className="Footer">
+      <Container className="Footer">
           <Row>
               <Col><h5>Created by <a href="https://www.jamfish.co.uk">Jamfish</a> 2021</h5></Col>
           </Row>

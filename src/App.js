@@ -22,7 +22,7 @@ function App() {
   return (
 
     
-    <MemoryRouter>
+    <MemoryRouter className="background">
       <Container className="p-3">
 
         <Jumbotron>
@@ -74,9 +74,9 @@ function App() {
           </Route>
           
         </Switch>
+      <Footer />
 
       </Container>
-      <Footer />
 
     </MemoryRouter>
 
